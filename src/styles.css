@@ -1,0 +1,4 @@
+body { background:#0d1117; color:white; font-family:sans-serif; }
+.navbar { position:fixed; top:0; width:100%; background:#111; padding:10px; }
+.section { padding:80px 20px; }
+.hero { padding:100px 20px; }
