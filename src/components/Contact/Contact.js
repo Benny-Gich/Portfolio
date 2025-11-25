@@ -8,6 +8,8 @@ const Contact = () => {
         subject: '',
         message: ''
     });
+    const [status, setStatus] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = (e) => {
         setFormData({
@@ -16,12 +18,38 @@ const Contact = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Handle form submission here
-        console.log('Form submitted:', formData);
-        alert('Thank you for your message! I\'ll get back to you soon.');
-        setFormData({ name: '', email: '', subject: '', message: '' });
+        setIsSubmitting(true);
+        setStatus('');
+
+        try {
+            const response = await fetch('https://formspree.io/f/xdkozwzq', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    subject: formData.subject,
+                    message: formData.message,
+                    _replyto: formData.email
+                })
+            });
+
+            if (response.ok) {
+                setStatus('success');
+                setFormData({ name: '', email: '', subject: '', message: '' });
+            } else {
+                setStatus('error');
+            }
+        } catch (error) {
+            console.error('Form submission error:', error);
+            setStatus('error');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -92,6 +120,17 @@ const Contact = () => {
                     </div>
 
                     <form className="contact-form" onSubmit={handleSubmit}>
+                        {status === 'success' && (
+                            <div className="form-message success">
+                                ✅ Thank you! Your message has been sent successfully. I'll get back to you soon!
+                            </div>
+                        )}
+                        {status === 'error' && (
+                            <div className="form-message error">
+                                ❌ Oops! Something went wrong. Please try again or email me directly.
+                            </div>
+                        )}
+
                         <div className="form-group">
                             <input
                                 type="text"
@@ -100,6 +139,7 @@ const Contact = () => {
                                 value={formData.name}
                                 onChange={handleChange}
                                 required
+                                disabled={isSubmitting}
                             />
                         </div>
 
@@ -111,6 +151,7 @@ const Contact = () => {
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
+                                disabled={isSubmitting}
                             />
                         </div>
 
@@ -122,6 +163,7 @@ const Contact = () => {
                                 value={formData.subject}
                                 onChange={handleChange}
                                 required
+                                disabled={isSubmitting}
                             />
                         </div>
 
@@ -133,11 +175,12 @@ const Contact = () => {
                                 value={formData.message}
                                 onChange={handleChange}
                                 required
+                                disabled={isSubmitting}
                             ></textarea>
                         </div>
 
-                        <button type="submit" className="btn btn-primary">
-                            Send Message
+                        <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
+                            {isSubmitting ? 'Sending...' : 'Send Message'}
                         </button>
                     </form>
                 </div>
