@@ -8,8 +8,6 @@ const Contact = () => {
         subject: '',
         message: ''
     });
-    const [status, setStatus] = useState('');
-    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = (e) => {
         setFormData({
@@ -18,38 +16,19 @@ const Contact = () => {
         });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        setIsSubmitting(true);
-        setStatus('');
 
-        try {
-            const response = await fetch('https://formspree.io/f/xdkozwzq', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    name: formData.name,
-                    email: formData.email,
-                    subject: formData.subject,
-                    message: formData.message,
-                    _replyto: formData.email
-                })
-            });
+        // Create mailto link with form data
+        const mailtoLink = `mailto:benjamingicheche98@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+            `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+        )}`;
 
-            if (response.ok) {
-                setStatus('success');
-                setFormData({ name: '', email: '', subject: '', message: '' });
-            } else {
-                setStatus('error');
-            }
-        } catch (error) {
-            console.error('Form submission error:', error);
-            setStatus('error');
-        } finally {
-            setIsSubmitting(false);
-        }
+        // Open default email client
+        window.location.href = mailtoLink;
+
+        // Reset form
+        setFormData({ name: '', email: '', subject: '', message: '' });
     };
 
     return (
@@ -120,16 +99,9 @@ const Contact = () => {
                     </div>
 
                     <form className="contact-form" onSubmit={handleSubmit}>
-                        {status === 'success' && (
-                            <div className="form-message success">
-                                ✅ Thank you! Your message has been sent successfully. I'll get back to you soon!
-                            </div>
-                        )}
-                        {status === 'error' && (
-                            <div className="form-message error">
-                                ❌ Oops! Something went wrong. Please try again or email me directly.
-                            </div>
-                        )}
+                        <div className="form-message info">
+                            📬 This form will open your default email client to send the message.
+                        </div>
 
                         <div className="form-group">
                             <input
@@ -139,7 +111,6 @@ const Contact = () => {
                                 value={formData.name}
                                 onChange={handleChange}
                                 required
-                                disabled={isSubmitting}
                             />
                         </div>
 
@@ -151,7 +122,6 @@ const Contact = () => {
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
-                                disabled={isSubmitting}
                             />
                         </div>
 
@@ -163,7 +133,6 @@ const Contact = () => {
                                 value={formData.subject}
                                 onChange={handleChange}
                                 required
-                                disabled={isSubmitting}
                             />
                         </div>
 
@@ -175,12 +144,11 @@ const Contact = () => {
                                 value={formData.message}
                                 onChange={handleChange}
                                 required
-                                disabled={isSubmitting}
                             ></textarea>
                         </div>
 
-                        <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
-                            {isSubmitting ? 'Sending...' : 'Send Message'}
+                        <button type="submit" className="btn btn-primary">
+                            Send Message
                         </button>
                     </form>
                 </div>
