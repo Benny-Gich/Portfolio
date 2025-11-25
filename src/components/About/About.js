@@ -5,7 +5,7 @@ const About = () => {
     const experiences = [
         {
             role: "Systems Administrator",
-            company: "Sarrai",
+            company: "SARRAI Group of Companies",
             period: "2021 - Present",
             location: "Nairobi, KE",
             achievements: [
@@ -18,7 +18,7 @@ const About = () => {
         {
             role: "Mobile Developer",
             company: "Attractions",
-            period: "2024 - 2025",
+            period: "2024 - Present",
             location: "Staffordshire, UK (Remote)",
             achievements: [
                 "Engineered responsive, adaptive UI components for cross-platform experiences",
