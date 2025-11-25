@@ -1,47 +1,47 @@
 import React, { useState, useEffect } from 'react';
 import './Projects.css';
 
+const featuredProjects = [
+    {
+        id: 1,
+        name: "Smart Mirror Application",
+        description: "Innovative Flutter-based smart mirror interface with custom widgets and adaptive UI",
+        tech: ["Flutter", "Dart", "UI/UX"],
+        category: "mobile",
+        github: "https://github.com/Benny-Gich/smart-mirror",
+        impact: "Advanced IoT integration with facial recognition capabilities"
+    },
+    {
+        id: 2,
+        name: "Drilling & Well Control Simulator",
+        description: "Complex simulation application for drilling operations with real-time data processing",
+        tech: ["Flutter", "Dart", "Algorithms"],
+        category: "mobile",
+        github: "https://github.com/Benny-Gich/drilling-simulator",
+        impact: "Training tool for petroleum industry professionals"
+    },
+    {
+        id: 3,
+        name: "Elamanella Websites",
+        description: "Responsive web platforms serving 10,000+ monthly users with 99.9% uptime",
+        tech: ["React", "WordPress", "MySQL"],
+        category: "web",
+        live: "http://elamanella.com",
+        impact: "High-traffic e-commerce solution with optimized performance"
+    },
+    {
+        id: 4,
+        name: "ERP System Migration",
+        description: "Led TIMS-regulated ETRS migration and ERP system transitions",
+        tech: ["SAP", "Tally", "PostgreSQL"],
+        category: "system",
+        impact: "Streamlined business processes across multiple departments"
+    }
+];
+
 const Projects = () => {
     const [projects, setProjects] = useState([]);
     const [filter, setFilter] = useState('all');
-
-    const featuredProjects = [
-        {
-            id: 1,
-            name: "Smart Mirror Application",
-            description: "Innovative Flutter-based smart mirror interface with custom widgets and adaptive UI",
-            tech: ["Flutter", "Dart", "UI/UX"],
-            category: "mobile",
-            github: "https://github.com/Benny-Gich/smart-mirror",
-            impact: "Advanced IoT integration with facial recognition capabilities"
-        },
-        {
-            id: 2,
-            name: "Drilling & Well Control Simulator",
-            description: "Complex simulation application for drilling operations with real-time data processing",
-            tech: ["Flutter", "Dart", "Algorithms"],
-            category: "mobile",
-            github: "https://github.com/Benny-Gich/drilling-simulator",
-            impact: "Training tool for petroleum industry professionals"
-        },
-        {
-            id: 3,
-            name: "Elamanella Websites",
-            description: "Responsive web platforms serving 10,000+ monthly users with 99.9% uptime",
-            tech: ["React", "WordPress", "MySQL"],
-            category: "web",
-            live: "http://elamanella.com",
-            impact: "High-traffic e-commerce solution with optimized performance"
-        },
-        {
-            id: 4,
-            name: "ERP System Migration",
-            description: "Led TIMS-regulated ETRS migration and ERP system transitions",
-            tech: ["SAP", "Tally", "PostgreSQL"],
-            category: "system",
-            impact: "Streamlined business processes across multiple departments"
-        }
-    ];
 
     useEffect(() => {
         // For now, we'll use the featured projects
