@@ -24,7 +24,7 @@ const Hero = () => {
 
                     <h2 className="hero-subtitle">
                         <span className="typing-text">
-                            Mobile Developer • Systems Administrator • Web Developer
+                            Mobile Application Developer • Systems Administrator • Web Developer
                         </span>
                     </h2>
 

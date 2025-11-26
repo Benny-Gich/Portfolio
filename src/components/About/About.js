@@ -16,7 +16,7 @@ const About = () => {
             ]
         },
         {
-            role: "Mobile Developer",
+            role: "Mobile Application Developer",
             company: "Attractions",
             period: "2024 - Present",
             location: "Staffordshire, UK (Remote)",

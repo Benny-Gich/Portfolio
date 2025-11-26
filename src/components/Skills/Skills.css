@@ -5,7 +5,7 @@
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 3rem;
 }
@@ -107,6 +107,7 @@
     transform: translateY(-2px);
 }
 
+/* Mobile: 1 column */
 @media (max-width: 768px) {
     .skills-grid {
         grid-template-columns: 1fr;
@@ -119,5 +120,19 @@
     .tech-tag {
         padding: 6px 12px;
         font-size: 0.8rem;
+    }
+}
+
+/* Tablet/Desktop: 2 columns */
+@media (min-width: 769px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large Desktop: 2 columns (maintaining consistent width with container) */
+@media (min-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

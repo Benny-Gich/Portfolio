@@ -31,7 +31,7 @@
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
 }
 
@@ -105,6 +105,7 @@
     color: var(--primary-dark);
 }
 
+/* Mobile: 1 column */
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr;
@@ -117,5 +118,19 @@
     .filter-btn {
         padding: 6px 16px;
         font-size: 0.9rem;
+    }
+}
+
+/* Tablet/Desktop: 2 columns */
+@media (min-width: 769px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large Desktop: 2 columns (maintaining consistent width with container) */
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
