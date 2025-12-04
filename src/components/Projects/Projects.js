@@ -8,7 +8,7 @@ const featuredProjects = [
         description: "Innovative Flutter-based smart mirror interface with custom widgets and adaptive UI",
         tech: ["Flutter", "Dart", "UI/UX"],
         category: "mobile",
-        github: "https://github.com/Benny-Gich/smart-mirror",
+        playstore: "https://play.google.com/store/apps/details?id=com.smartmirror.saral",
         impact: "Advanced IoT integration with facial recognition capabilities"
     },
     {
@@ -17,7 +17,7 @@ const featuredProjects = [
         description: "Complex simulation application for drilling operations with real-time data processing",
         tech: ["Flutter", "Dart", "Algorithms"],
         category: "mobile",
-        github: "https://github.com/Benny-Gich/drilling-simulator",
+        playstore: "https://play.google.com/store/apps/details?id=com.ltd.simulation.drilling",
         impact: "Training tool for petroleum industry professionals"
     },
     {
@@ -95,9 +95,9 @@ const Projects = () => {
                             </div>
 
                             <div className="project-links">
-                                {project.github && (
-                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
-                                        GitHub
+                                {project.playstore && (
+                                    <a href={project.playstore} target="_blank" rel="noopener noreferrer" className="project-link">
+                                        Play Store
                                     </a>
                                 )}
                                 {project.live && (
