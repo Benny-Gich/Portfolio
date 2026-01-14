@@ -17,7 +17,7 @@ const About = () => {
         },
         {
             role: "Mobile Application Developer",
-            company: "Attractions",
+            company: "Code Synth",
             period: "2024 - Present",
             location: "Staffordshire, UK (Remote)",
             achievements: [
@@ -29,7 +29,7 @@ const About = () => {
         },
         {
             role: "Web Developer",
-            company: "App Lovin",
+            company: "Code Synth",
             period: "2022 - 2025",
             location: "California, US (Remote)",
             achievements: [
