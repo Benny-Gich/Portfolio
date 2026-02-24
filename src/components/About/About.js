@@ -9,17 +9,24 @@ const About = () => {
             period: "2021 - Present",
             location: "Nairobi, KE",
             achievements: [
+                
                 "Directed enterprise infrastructure including server management and databases",
-                "Led TIMs-regulated ETRS migration across departments",
-                "Pioneered facial recognition attendance automation integrated with payroll",
-                "Orchestrated ERP system transitions streamlining business processes"
+                "Network administration (CIsco(CCNP/CCIE)",
+                "Database administration (MySQL, PostgreSQL), and ERP systems (SAP, Tally Prime, SERA).",                "Pioneered facial recognition attendance automation integrated with payroll",
+                "Led TIMS-regulated ETRS migration across departments, optimizing workflows and ensuring compliance.",
+                "Managed services alerts: Incident ticket analysis, remote support & resolution.",
+                "Pioneered facial recognition attendance automation integrated with payroll, enhancing operational transparency",
+                "Developed, executive and verified routine backup and disaster recovery procedures.",
+                "Proactively monitored system performance, capacity and availability and responded to alerts and incidents",
+                "User Account & Access Management: Created/deleted user accounts, managed permissions (Active Directory), and implemented access controls",
+                "Technical Support & Troubleshooting: Acted as an escalation point for help desk for complex technical issues"
             ]
         },
         {
             role: "Mobile Application Developer",
             company: "Code Synth",
-            period: "2024 - Present",
-            location: "Staffordshire, UK (Remote)",
+            period: "2024 - 2025",
+            location: "Nairobi, KE (Remote)",
             achievements: [
                 "Engineered responsive, adaptive UI components for cross-platform experiences",
                 "Optimized application performance through strategic widget optimization",
@@ -29,9 +36,9 @@ const About = () => {
         },
         {
             role: "Web Developer",
-            company: "Code Synth",
-            period: "2022 - 2025",
-            location: "California, US (Remote)",
+            company: "App Lovin",
+            period: "2022 - 2023",
+            location: "Staffordshire, UK (Remote)",
             achievements: [
                 "Developed 5+ responsive websites serving 10,000+ monthly users",
                 "Optimized database performance reducing query response times by 30%",
@@ -41,6 +48,8 @@ const About = () => {
         }
     ];
 
+
+    
     return (
         <section id="about" className="about">
             <div className="container">
