@@ -1,0 +1,764 @@
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+FAIL src/test/Header.test.js
+  ΓùÅ Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     ΓÇó If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     ΓÇó If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     ΓÇó To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     ΓÇó If you need a custom transformation specify a "transform" option in your config.
+     ΓÇó If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: D:\Projects\benjamin-portfolio\src\test\Header.test.js: Support for the experimental syntax 'jsx' isn't currently enabled (14:16):
+
+      12 |
+      13 |     test('renders header with logo', () => {
+    > 14 |         render(<Header darkMode={false} setDarkMode={mockSetDarkMode} activeSection="home" />);
+         |                ^
+      15 |         expect(screen.getByText('Benjamin Gicheche')).toBeInTheDocument();
+      16 |     });
+      17 |
+
+    Add @babel/preset-react (https://github.com/babel/babel/tree/main/packages/babel-preset-react) to the 'presets' section of your Babel config to enable transformation.
+    If you want to leave it as-is, add @babel/plugin-syntax-jsx (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-jsx) to the 'plugins' section to enable parsing.
+
+    If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+    You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+    	npx cross-env BABEL_SHOW_CONFIG_FOR=D:\Projects\benjamin-portfolio\src\test\Header.test.js <your build command>
+    See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+      at toParseError (node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at Parser.raise (node_modules/@babel/parser/src/tokenizer/index.ts:1507:19)
+      at Parser.expectOnePlugin (node_modules/@babel/parser/src/tokenizer/index.ts:1572:18)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1272:22)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3202:12)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseMaybeAssignAllowInOrVoidPattern (node_modules/@babel/parser/src/parser/expression.ts:3316:17)
+      at Parser.parseExprListItem (node_modules/@babel/parser/src/parser/expression.ts:2798:18)
+      at Parser.parseCallExpressionArguments (node_modules/@babel/parser/src/parser/expression.ts:1042:14)
+      at Parser.parseCoverCallAndAsyncArrowHead (node_modules/@babel/parser/src/parser/expression.ts:922:29)
+      at Parser.parseSubscript (node_modules/@babel/parser/src/parser/expression.ts:804:19)
+      at Parser.parseSubscripts (node_modules/@babel/parser/src/parser/expression.ts:763:19)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:748:17)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at Parser.parseExpressionBase (node_modules/@babel/parser/src/parser/expression.ts:226:23)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:217:39)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3197:16)
+      at Parser.parseExpression (node_modules/@babel/parser/src/parser/expression.ts:217:17)
+      at Parser.parseStatementContent (node_modules/@babel/parser/src/parser/statement.ts:688:23)
+      at Parser.parseStatementLike (node_modules/@babel/parser/src/parser/statement.ts:482:17)
+      at Parser.parseStatementListItem (node_modules/@babel/parser/src/parser/statement.ts:431:17)
+      at Parser.parseBlockOrModuleBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1444:16)
+      at Parser.parseBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1417:10)
+      at Parser.parseBlock (node_modules/@babel/parser/src/parser/statement.ts:1385:10)
+      at Parser.parseFunctionBody (node_modules/@babel/parser/src/parser/expression.ts:2626:24)
+      at Parser.parseArrowExpression (node_modules/@babel/parser/src/parser/expression.ts:2563:10)
+      at Parser.parseParenAndDistinguishExpression (node_modules/@babel/parser/src/parser/expression.ts:1847:12)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1170:21)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3202:12)
+
+FAIL src/test/Footer.test.js
+  ΓùÅ Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     ΓÇó If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     ΓÇó If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     ΓÇó To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     ΓÇó If you need a custom transformation specify a "transform" option in your config.
+     ΓÇó If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: D:\Projects\benjamin-portfolio\src\test\Footer.test.js: Support for the experimental syntax 'jsx' isn't currently enabled (8:38):
+
+       6 | describe('Footer Component', () => {
+       7 |     test('renders footer element', () => {
+    >  8 |         const { container } = render(<Footer />);
+         |                                      ^
+       9 |         expect(container.querySelector('footer')).toBeInTheDocument();
+      10 |     });
+      11 |
+
+    Add @babel/preset-react (https://github.com/babel/babel/tree/main/packages/babel-preset-react) to the 'presets' section of your Babel config to enable transformation.
+    If you want to leave it as-is, add @babel/plugin-syntax-jsx (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-jsx) to the 'plugins' section to enable parsing.
+
+    If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+    You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+    	npx cross-env BABEL_SHOW_CONFIG_FOR=D:\Projects\benjamin-portfolio\src\test\Footer.test.js <your build command>
+    See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+      at toParseError (node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at Parser.raise (node_modules/@babel/parser/src/tokenizer/index.ts:1507:19)
+      at Parser.expectOnePlugin (node_modules/@babel/parser/src/tokenizer/index.ts:1572:18)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1272:22)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3202:12)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseMaybeAssignAllowInOrVoidPattern (node_modules/@babel/parser/src/parser/expression.ts:3316:17)
+      at Parser.parseExprListItem (node_modules/@babel/parser/src/parser/expression.ts:2798:18)
+      at Parser.parseCallExpressionArguments (node_modules/@babel/parser/src/parser/expression.ts:1042:14)
+      at Parser.parseCoverCallAndAsyncArrowHead (node_modules/@babel/parser/src/parser/expression.ts:922:29)
+      at Parser.parseSubscript (node_modules/@babel/parser/src/parser/expression.ts:804:19)
+      at Parser.parseSubscripts (node_modules/@babel/parser/src/parser/expression.ts:763:19)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:748:17)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3197:16)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseVar (node_modules/@babel/parser/src/parser/statement.ts:1587:18)
+      at Parser.parseVarStatement (node_modules/@babel/parser/src/parser/statement.ts:1251:10)
+      at Parser.parseStatementContent (node_modules/@babel/parser/src/parser/statement.ts:612:21)
+      at Parser.parseStatementLike (node_modules/@babel/parser/src/parser/statement.ts:482:17)
+      at Parser.parseStatementListItem (node_modules/@babel/parser/src/parser/statement.ts:431:17)
+      at Parser.parseBlockOrModuleBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1444:16)
+      at Parser.parseBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1417:10)
+      at Parser.parseBlock (node_modules/@babel/parser/src/parser/statement.ts:1385:10)
+      at Parser.parseFunctionBody (node_modules/@babel/parser/src/parser/expression.ts:2626:24)
+      at Parser.parseArrowExpression (node_modules/@babel/parser/src/parser/expression.ts:2563:10)
+      at Parser.parseParenAndDistinguishExpression (node_modules/@babel/parser/src/parser/expression.ts:1847:12)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1170:21)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at node_modules/@babel/parser/src/parser/expression.ts:257:12
+
+FAIL src/test/Contact.test.js
+  ΓùÅ Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     ΓÇó If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     ΓÇó If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     ΓÇó To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     ΓÇó If you need a custom transformation specify a "transform" option in your config.
+     ΓÇó If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: D:\Projects\benjamin-portfolio\src\test\Contact.test.js: Support for the experimental syntax 'jsx' isn't currently enabled (16:38):
+
+      14 |
+      15 |     test('renders contact section with correct id', () => {
+    > 16 |         const { container } = render(<Contact />);
+         |                                      ^
+      17 |         expect(container.querySelector('#contact')).toBeInTheDocument();
+      18 |     });
+      19 |
+
+    Add @babel/preset-react (https://github.com/babel/babel/tree/main/packages/babel-preset-react) to the 'presets' section of your Babel config to enable transformation.
+    If you want to leave it as-is, add @babel/plugin-syntax-jsx (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-jsx) to the 'plugins' section to enable parsing.
+
+    If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+    You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+    	npx cross-env BABEL_SHOW_CONFIG_FOR=D:\Projects\benjamin-portfolio\src\test\Contact.test.js <your build command>
+    See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+      at toParseError (node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at Parser.raise (node_modules/@babel/parser/src/tokenizer/index.ts:1507:19)
+      at Parser.expectOnePlugin (node_modules/@babel/parser/src/tokenizer/index.ts:1572:18)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1272:22)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3202:12)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseMaybeAssignAllowInOrVoidPattern (node_modules/@babel/parser/src/parser/expression.ts:3316:17)
+      at Parser.parseExprListItem (node_modules/@babel/parser/src/parser/expression.ts:2798:18)
+      at Parser.parseCallExpressionArguments (node_modules/@babel/parser/src/parser/expression.ts:1042:14)
+      at Parser.parseCoverCallAndAsyncArrowHead (node_modules/@babel/parser/src/parser/expression.ts:922:29)
+      at Parser.parseSubscript (node_modules/@babel/parser/src/parser/expression.ts:804:19)
+      at Parser.parseSubscripts (node_modules/@babel/parser/src/parser/expression.ts:763:19)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:748:17)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3197:16)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseVar (node_modules/@babel/parser/src/parser/statement.ts:1587:18)
+      at Parser.parseVarStatement (node_modules/@babel/parser/src/parser/statement.ts:1251:10)
+      at Parser.parseStatementContent (node_modules/@babel/parser/src/parser/statement.ts:612:21)
+      at Parser.parseStatementLike (node_modules/@babel/parser/src/parser/statement.ts:482:17)
+      at Parser.parseStatementListItem (node_modules/@babel/parser/src/parser/statement.ts:431:17)
+      at Parser.parseBlockOrModuleBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1444:16)
+      at Parser.parseBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1417:10)
+      at Parser.parseBlock (node_modules/@babel/parser/src/parser/statement.ts:1385:10)
+      at Parser.parseFunctionBody (node_modules/@babel/parser/src/parser/expression.ts:2626:24)
+      at Parser.parseArrowExpression (node_modules/@babel/parser/src/parser/expression.ts:2563:10)
+      at Parser.parseParenAndDistinguishExpression (node_modules/@babel/parser/src/parser/expression.ts:1847:12)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1170:21)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at node_modules/@babel/parser/src/parser/expression.ts:257:12
+
+FAIL src/test/Skills.test.js
+  ΓùÅ Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     ΓÇó If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     ΓÇó If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     ΓÇó To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     ΓÇó If you need a custom transformation specify a "transform" option in your config.
+     ΓÇó If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: D:\Projects\benjamin-portfolio\src\test\Skills.test.js: Support for the experimental syntax 'jsx' isn't currently enabled (8:38):
+
+       6 | describe('Skills Component', () => {
+       7 |     test('renders skills section with correct id', () => {
+    >  8 |         const { container } = render(<Skills />);
+         |                                      ^
+       9 |         expect(container.querySelector('#skills')).toBeInTheDocument();
+      10 |     });
+      11 |
+
+    Add @babel/preset-react (https://github.com/babel/babel/tree/main/packages/babel-preset-react) to the 'presets' section of your Babel config to enable transformation.
+    If you want to leave it as-is, add @babel/plugin-syntax-jsx (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-jsx) to the 'plugins' section to enable parsing.
+
+    If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+    You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+    	npx cross-env BABEL_SHOW_CONFIG_FOR=D:\Projects\benjamin-portfolio\src\test\Skills.test.js <your build command>
+    See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+      at toParseError (node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at Parser.raise (node_modules/@babel/parser/src/tokenizer/index.ts:1507:19)
+      at Parser.expectOnePlugin (node_modules/@babel/parser/src/tokenizer/index.ts:1572:18)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1272:22)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3202:12)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseMaybeAssignAllowInOrVoidPattern (node_modules/@babel/parser/src/parser/expression.ts:3316:17)
+      at Parser.parseExprListItem (node_modules/@babel/parser/src/parser/expression.ts:2798:18)
+      at Parser.parseCallExpressionArguments (node_modules/@babel/parser/src/parser/expression.ts:1042:14)
+      at Parser.parseCoverCallAndAsyncArrowHead (node_modules/@babel/parser/src/parser/expression.ts:922:29)
+      at Parser.parseSubscript (node_modules/@babel/parser/src/parser/expression.ts:804:19)
+      at Parser.parseSubscripts (node_modules/@babel/parser/src/parser/expression.ts:763:19)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:748:17)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3197:16)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseVar (node_modules/@babel/parser/src/parser/statement.ts:1587:18)
+      at Parser.parseVarStatement (node_modules/@babel/parser/src/parser/statement.ts:1251:10)
+      at Parser.parseStatementContent (node_modules/@babel/parser/src/parser/statement.ts:612:21)
+      at Parser.parseStatementLike (node_modules/@babel/parser/src/parser/statement.ts:482:17)
+      at Parser.parseStatementListItem (node_modules/@babel/parser/src/parser/statement.ts:431:17)
+      at Parser.parseBlockOrModuleBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1444:16)
+      at Parser.parseBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1417:10)
+      at Parser.parseBlock (node_modules/@babel/parser/src/parser/statement.ts:1385:10)
+      at Parser.parseFunctionBody (node_modules/@babel/parser/src/parser/expression.ts:2626:24)
+      at Parser.parseArrowExpression (node_modules/@babel/parser/src/parser/expression.ts:2563:10)
+      at Parser.parseParenAndDistinguishExpression (node_modules/@babel/parser/src/parser/expression.ts:1847:12)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1170:21)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at node_modules/@babel/parser/src/parser/expression.ts:257:12
+
+FAIL src/test/Projects.test.js
+  ΓùÅ Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     ΓÇó If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     ΓÇó If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     ΓÇó To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     ΓÇó If you need a custom transformation specify a "transform" option in your config.
+     ΓÇó If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: D:\Projects\benjamin-portfolio\src\test\Projects.test.js: Support for the experimental syntax 'jsx' isn't currently enabled (8:38):
+
+       6 | describe('Projects Component', () => {
+       7 |     test('renders projects section with correct id', () => {
+    >  8 |         const { container } = render(<Projects />);
+         |                                      ^
+       9 |         expect(container.querySelector('#projects')).toBeInTheDocument();
+      10 |     });
+      11 |
+
+    Add @babel/preset-react (https://github.com/babel/babel/tree/main/packages/babel-preset-react) to the 'presets' section of your Babel config to enable transformation.
+    If you want to leave it as-is, add @babel/plugin-syntax-jsx (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-jsx) to the 'plugins' section to enable parsing.
+
+    If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+    You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+    	npx cross-env BABEL_SHOW_CONFIG_FOR=D:\Projects\benjamin-portfolio\src\test\Projects.test.js <your build command>
+    See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+      at toParseError (node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at Parser.raise (node_modules/@babel/parser/src/tokenizer/index.ts:1507:19)
+      at Parser.expectOnePlugin (node_modules/@babel/parser/src/tokenizer/index.ts:1572:18)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1272:22)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3202:12)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseMaybeAssignAllowInOrVoidPattern (node_modules/@babel/parser/src/parser/expression.ts:3316:17)
+      at Parser.parseExprListItem (node_modules/@babel/parser/src/parser/expression.ts:2798:18)
+      at Parser.parseCallExpressionArguments (node_modules/@babel/parser/src/parser/expression.ts:1042:14)
+      at Parser.parseCoverCallAndAsyncArrowHead (node_modules/@babel/parser/src/parser/expression.ts:922:29)
+      at Parser.parseSubscript (node_modules/@babel/parser/src/parser/expression.ts:804:19)
+      at Parser.parseSubscripts (node_modules/@babel/parser/src/parser/expression.ts:763:19)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:748:17)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3197:16)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseVar (node_modules/@babel/parser/src/parser/statement.ts:1587:18)
+      at Parser.parseVarStatement (node_modules/@babel/parser/src/parser/statement.ts:1251:10)
+      at Parser.parseStatementContent (node_modules/@babel/parser/src/parser/statement.ts:612:21)
+      at Parser.parseStatementLike (node_modules/@babel/parser/src/parser/statement.ts:482:17)
+      at Parser.parseStatementListItem (node_modules/@babel/parser/src/parser/statement.ts:431:17)
+      at Parser.parseBlockOrModuleBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1444:16)
+      at Parser.parseBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1417:10)
+      at Parser.parseBlock (node_modules/@babel/parser/src/parser/statement.ts:1385:10)
+      at Parser.parseFunctionBody (node_modules/@babel/parser/src/parser/expression.ts:2626:24)
+      at Parser.parseArrowExpression (node_modules/@babel/parser/src/parser/expression.ts:2563:10)
+      at Parser.parseParenAndDistinguishExpression (node_modules/@babel/parser/src/parser/expression.ts:1847:12)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1170:21)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at node_modules/@babel/parser/src/parser/expression.ts:257:12
+
+FAIL src/test/App.test.js
+  ΓùÅ Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     ΓÇó If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     ΓÇó If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     ΓÇó To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     ΓÇó If you need a custom transformation specify a "transform" option in your config.
+     ΓÇó If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: D:\Projects\benjamin-portfolio\src\test\App.test.js: Support for the experimental syntax 'jsx' isn't currently enabled (13:34):
+
+      11 |
+      12 |   test('renders without crashing', () => {
+    > 13 |     const { container } = render(<App />);
+         |                                  ^
+      14 |     expect(container.querySelector('.App')).toBeInTheDocument();
+      15 |   });
+      16 |
+
+    Add @babel/preset-react (https://github.com/babel/babel/tree/main/packages/babel-preset-react) to the 'presets' section of your Babel config to enable transformation.
+    If you want to leave it as-is, add @babel/plugin-syntax-jsx (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-jsx) to the 'plugins' section to enable parsing.
+
+    If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+    You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+    	npx cross-env BABEL_SHOW_CONFIG_FOR=D:\Projects\benjamin-portfolio\src\test\App.test.js <your build command>
+    See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+      at toParseError (node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at Parser.raise (node_modules/@babel/parser/src/tokenizer/index.ts:1507:19)
+      at Parser.expectOnePlugin (node_modules/@babel/parser/src/tokenizer/index.ts:1572:18)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1272:22)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3202:12)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseMaybeAssignAllowInOrVoidPattern (node_modules/@babel/parser/src/parser/expression.ts:3316:17)
+      at Parser.parseExprListItem (node_modules/@babel/parser/src/parser/expression.ts:2798:18)
+      at Parser.parseCallExpressionArguments (node_modules/@babel/parser/src/parser/expression.ts:1042:14)
+      at Parser.parseCoverCallAndAsyncArrowHead (node_modules/@babel/parser/src/parser/expression.ts:922:29)
+      at Parser.parseSubscript (node_modules/@babel/parser/src/parser/expression.ts:804:19)
+      at Parser.parseSubscripts (node_modules/@babel/parser/src/parser/expression.ts:763:19)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:748:17)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3197:16)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseVar (node_modules/@babel/parser/src/parser/statement.ts:1587:18)
+      at Parser.parseVarStatement (node_modules/@babel/parser/src/parser/statement.ts:1251:10)
+      at Parser.parseStatementContent (node_modules/@babel/parser/src/parser/statement.ts:612:21)
+      at Parser.parseStatementLike (node_modules/@babel/parser/src/parser/statement.ts:482:17)
+      at Parser.parseStatementListItem (node_modules/@babel/parser/src/parser/statement.ts:431:17)
+      at Parser.parseBlockOrModuleBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1444:16)
+      at Parser.parseBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1417:10)
+      at Parser.parseBlock (node_modules/@babel/parser/src/parser/statement.ts:1385:10)
+      at Parser.parseFunctionBody (node_modules/@babel/parser/src/parser/expression.ts:2626:24)
+      at Parser.parseArrowExpression (node_modules/@babel/parser/src/parser/expression.ts:2563:10)
+      at Parser.parseParenAndDistinguishExpression (node_modules/@babel/parser/src/parser/expression.ts:1847:12)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1170:21)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at node_modules/@babel/parser/src/parser/expression.ts:257:12
+
+FAIL src/test/Hero.test.js
+  ΓùÅ Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     ΓÇó If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     ΓÇó If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     ΓÇó To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     ΓÇó If you need a custom transformation specify a "transform" option in your config.
+     ΓÇó If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: D:\Projects\benjamin-portfolio\src\test\Hero.test.js: Support for the experimental syntax 'jsx' isn't currently enabled (8:38):
+
+       6 | describe('Hero Component', () => {
+       7 |     test('renders hero section with correct id', () => {
+    >  8 |         const { container } = render(<Hero />);
+         |                                      ^
+       9 |         expect(container.querySelector('#home')).toBeInTheDocument();
+      10 |     });
+      11 |
+
+    Add @babel/preset-react (https://github.com/babel/babel/tree/main/packages/babel-preset-react) to the 'presets' section of your Babel config to enable transformation.
+    If you want to leave it as-is, add @babel/plugin-syntax-jsx (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-jsx) to the 'plugins' section to enable parsing.
+
+    If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+    You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+    	npx cross-env BABEL_SHOW_CONFIG_FOR=D:\Projects\benjamin-portfolio\src\test\Hero.test.js <your build command>
+    See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+      at toParseError (node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at Parser.raise (node_modules/@babel/parser/src/tokenizer/index.ts:1507:19)
+      at Parser.expectOnePlugin (node_modules/@babel/parser/src/tokenizer/index.ts:1572:18)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1272:22)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3202:12)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseMaybeAssignAllowInOrVoidPattern (node_modules/@babel/parser/src/parser/expression.ts:3316:17)
+      at Parser.parseExprListItem (node_modules/@babel/parser/src/parser/expression.ts:2798:18)
+      at Parser.parseCallExpressionArguments (node_modules/@babel/parser/src/parser/expression.ts:1042:14)
+      at Parser.parseCoverCallAndAsyncArrowHead (node_modules/@babel/parser/src/parser/expression.ts:922:29)
+      at Parser.parseSubscript (node_modules/@babel/parser/src/parser/expression.ts:804:19)
+      at Parser.parseSubscripts (node_modules/@babel/parser/src/parser/expression.ts:763:19)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:748:17)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3197:16)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseVar (node_modules/@babel/parser/src/parser/statement.ts:1587:18)
+      at Parser.parseVarStatement (node_modules/@babel/parser/src/parser/statement.ts:1251:10)
+      at Parser.parseStatementContent (node_modules/@babel/parser/src/parser/statement.ts:612:21)
+      at Parser.parseStatementLike (node_modules/@babel/parser/src/parser/statement.ts:482:17)
+      at Parser.parseStatementListItem (node_modules/@babel/parser/src/parser/statement.ts:431:17)
+      at Parser.parseBlockOrModuleBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1444:16)
+      at Parser.parseBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1417:10)
+      at Parser.parseBlock (node_modules/@babel/parser/src/parser/statement.ts:1385:10)
+      at Parser.parseFunctionBody (node_modules/@babel/parser/src/parser/expression.ts:2626:24)
+      at Parser.parseArrowExpression (node_modules/@babel/parser/src/parser/expression.ts:2563:10)
+      at Parser.parseParenAndDistinguishExpression (node_modules/@babel/parser/src/parser/expression.ts:1847:12)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1170:21)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at node_modules/@babel/parser/src/parser/expression.ts:257:12
+
+FAIL src/test/About.test.js
+  ΓùÅ Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     ΓÇó If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     ΓÇó If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     ΓÇó To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     ΓÇó If you need a custom transformation specify a "transform" option in your config.
+     ΓÇó If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: D:\Projects\benjamin-portfolio\src\test\About.test.js: Support for the experimental syntax 'jsx' isn't currently enabled (8:38):
+
+       6 | describe('About Component', () => {
+       7 |     test('renders about section with correct id', () => {
+    >  8 |         const { container } = render(<About />);
+         |                                      ^
+       9 |         expect(container.querySelector('#about')).toBeInTheDocument();
+      10 |     });
+      11 |
+
+    Add @babel/preset-react (https://github.com/babel/babel/tree/main/packages/babel-preset-react) to the 'presets' section of your Babel config to enable transformation.
+    If you want to leave it as-is, add @babel/plugin-syntax-jsx (https://github.com/babel/babel/tree/main/packages/babel-plugin-syntax-jsx) to the 'plugins' section to enable parsing.
+
+    If you already added the plugin for this syntax to your config, it's possible that your config isn't being loaded.
+    You can re-run Babel with the BABEL_SHOW_CONFIG_FOR environment variable to show the loaded configuration:
+    	npx cross-env BABEL_SHOW_CONFIG_FOR=D:\Projects\benjamin-portfolio\src\test\About.test.js <your build command>
+    See https://babeljs.io/docs/configuration#print-effective-configs for more info.
+
+      at toParseError (node_modules/@babel/parser/src/parse-error.ts:95:45)
+      at Parser.raise (node_modules/@babel/parser/src/tokenizer/index.ts:1507:19)
+      at Parser.expectOnePlugin (node_modules/@babel/parser/src/tokenizer/index.ts:1572:18)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1272:22)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3202:12)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseMaybeAssignAllowInOrVoidPattern (node_modules/@babel/parser/src/parser/expression.ts:3316:17)
+      at Parser.parseExprListItem (node_modules/@babel/parser/src/parser/expression.ts:2798:18)
+      at Parser.parseCallExpressionArguments (node_modules/@babel/parser/src/parser/expression.ts:1042:14)
+      at Parser.parseCoverCallAndAsyncArrowHead (node_modules/@babel/parser/src/parser/expression.ts:922:29)
+      at Parser.parseSubscript (node_modules/@babel/parser/src/parser/expression.ts:804:19)
+      at Parser.parseSubscripts (node_modules/@babel/parser/src/parser/expression.ts:763:19)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:748:17)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at callback (node_modules/@babel/parser/src/parser/expression.ts:257:12)
+      at Parser.allowInAnd (node_modules/@babel/parser/src/parser/expression.ts:3197:16)
+      at Parser.parseMaybeAssignAllowIn (node_modules/@babel/parser/src/parser/expression.ts:256:17)
+      at Parser.parseVar (node_modules/@babel/parser/src/parser/statement.ts:1587:18)
+      at Parser.parseVarStatement (node_modules/@babel/parser/src/parser/statement.ts:1251:10)
+      at Parser.parseStatementContent (node_modules/@babel/parser/src/parser/statement.ts:612:21)
+      at Parser.parseStatementLike (node_modules/@babel/parser/src/parser/statement.ts:482:17)
+      at Parser.parseStatementListItem (node_modules/@babel/parser/src/parser/statement.ts:431:17)
+      at Parser.parseBlockOrModuleBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1444:16)
+      at Parser.parseBlockBody (node_modules/@babel/parser/src/parser/statement.ts:1417:10)
+      at Parser.parseBlock (node_modules/@babel/parser/src/parser/statement.ts:1385:10)
+      at Parser.parseFunctionBody (node_modules/@babel/parser/src/parser/expression.ts:2626:24)
+      at Parser.parseArrowExpression (node_modules/@babel/parser/src/parser/expression.ts:2563:10)
+      at Parser.parseParenAndDistinguishExpression (node_modules/@babel/parser/src/parser/expression.ts:1847:12)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.ts:1170:21)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.ts:742:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.ts:721:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.ts:683:23)
+      at Parser.parseMaybeUnaryOrPrivate (node_modules/@babel/parser/src/parser/expression.ts:417:14)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.ts:429:23)
+      at Parser.parseMaybeConditional (node_modules/@babel/parser/src/parser/expression.ts:384:23)
+      at Parser.parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.ts:301:21)
+      at node_modules/@babel/parser/src/parser/expression.ts:257:12
+
+Test Suites: 8 failed, 8 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        3.729 s
+Ran all test suites.

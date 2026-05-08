@@ -21,14 +21,14 @@ describe('Hero Component', () => {
 
     test('renders professional roles', () => {
         render(<Hero />);
-        expect(screen.getByText(/Mobile Application Developer/i)).toBeInTheDocument();
+        expect(screen.getByText(/Mobile App Developer/i)).toBeInTheDocument();
         expect(screen.getByText(/Systems Administrator/i)).toBeInTheDocument();
         expect(screen.getByText(/Web Developer/i)).toBeInTheDocument();
     });
 
     test('renders hero description', () => {
         render(<Hero />);
-        expect(screen.getByText(/Full-stack developer/i)).toBeInTheDocument();
+        expect(screen.getByText(/Results-driven IT professional/i)).toBeInTheDocument();
     });
 
     test('renders all stats correctly', () => {

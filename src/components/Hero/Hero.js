@@ -15,7 +15,7 @@ const Hero = () => {
             <div className="hero-container">
                 <div className="hero-content">
                     <div className="hero-badge">
-                        <span>🚀 Available for New Opportunities</span>
+                        <span>Available for New Opportunities 🚀</span>
                     </div>
 
                     <h1 className="hero-title">
@@ -24,15 +24,13 @@ const Hero = () => {
 
                     <h2 className="hero-subtitle">
                         <span className="typing-text">
-                            Mobile App Developer • Systems Administrator • Web Developer • UI/UX Designer
+                            Mobile App Developer • IT Officer • Systems Administrator • Web Developer • UI/UX Designer
                         </span>
                     </h2>
 
                     <p className="hero-description">
-                        Full-stack developer with 5+ years experience in mobile app development,
-                        system administration, and web solutions. Passionate about creating
-                        efficient, scalable software that drives business growth and enhances user experiences.
-                    </p>
+                        Results-driven IT professional with 5+ years of experience in Windows Server administration, network management, database optimization, and ERP system support. Proven expertise in managing enterprise IT infrastructure, including Active Directory, Group Policy, VMware virtualization, and disaster recovery planning. Adept at leading system migrations, enforcing IT security policies, and ensuring regulatory compliance. Combines deep technical knowledge with a strategic mindset to deliver scalable, secure, and efficient solutions that align with business objectives.
+                         </p>
 
                     <div className="hero-stats">
                         <div className="stat">

@@ -1,0 +1,883 @@
+
+> benjamin-portfolio@0.1.0 test
+> react-scripts test
+
+FAIL src/test/Hero.test.js
+  ΓùÅ Hero Component ΓÇ║ renders professional roles
+
+    TestingLibraryElementError: Unable to find an element with the text: /Mobile Application Developer/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    <body>
+      <div>
+        <section
+          class="hero"
+          id="home"
+        >
+          <div
+            class="hero-container"
+          >
+            <div
+              class="hero-content"
+            >
+              <div
+                class="hero-badge"
+              >
+                <span>
+                  ≡ƒÜÇ Available for New Opportunities
+                </span>
+              </div>
+              <h1
+                class="hero-title"
+              >
+                Hi, I'm 
+                <span
+                  class="accent"
+                >
+                  Benjamin Gicheche
+                </span>
+              </h1>
+              <h2
+                class="hero-subtitle"
+              >
+                <span
+                  class="typing-text"
+                >
+                  Mobile App Developer ΓÇó Systems Administrator ΓÇó Web Developer ΓÇó UI/UX Designer
+                </span>
+              </h2>
+              <p
+                class="hero-description"
+              >
+                Results-driven IT professional with 5+ years of experience in Windows Server administration, network management, database optimization, and ERP system support. Proven expertise in managing enterprise IT infrastructure, including Active Directory, Group Policy, VMware virtualization, and disaster recovery planning. Adept at leading system migrations, enforcing IT security policies, and ensuring regulatory compliance. Combines deep technical knowledge with a strategic mindset to deliver scalable, secure, and efficient solutions that align with business objectives.
+              </p>
+              <div
+                class="hero-stats"
+              >
+                <div
+                  class="stat"
+                >
+                  <span
+                    class="stat-number"
+                  >
+                    5+
+                  </span>
+                  <span
+                    class="stat-label"
+                  >
+                    Years Experience
+                  </span>
+                </div>
+                <div
+                  class="stat"
+                >
+                  <span
+                    class="stat-number"
+                  >
+                    10K+
+                  </span>
+                  <span
+                    class="stat-label"
+                  >
+                    Monthly Users
+                  </span>
+                </div>
+                <div
+                  class="stat"
+                >
+                  <span
+                    class="stat-number"
+                  >
+                    99.9%
+                  </span>
+                  <span
+                    class="stat-label"
+                  >
+                    Uptime
+                  </span>
+                </div>
+              </div>
+              <div
+                class="hero-buttons"
+              >
+                <button
+                  class="btn btn-primary"
+                >
+                  View My Work
+                </button>
+                <button
+                  class="btn btn-secondary"
+                >
+                  Let's Connect
+                </button>
+              </div>
+            </div>
+            <div
+              class="hero-visual"
+            >
+              <div
+                class="profile-image-container"
+              >
+                <img
+                  alt="Benjamin Gicheche"
+                  class="profile-image"
+                  src="profile-hero.jpg"
+                />
+                <div
+                  class="image-decoration"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </body>
+
+      22 |     test('renders professional roles', () => {
+      23 |         render(<Hero />);
+    > 24 |         expect(screen.getByText(/Mobile Application Developer/i)).toBeInTheDocument();
+         |                       ^
+      25 |         expect(screen.getByText(/Systems Administrator/i)).toBeInTheDocument();
+      26 |         expect(screen.getByText(/Web Developer/i)).toBeInTheDocument();
+      27 |     });
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/test/Hero.test.js:24:23)
+
+  ΓùÅ Hero Component ΓÇ║ renders hero description
+
+    TestingLibraryElementError: Unable to find an element with the text: /Full-stack developer/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    <body>
+      <div>
+        <section
+          class="hero"
+          id="home"
+        >
+          <div
+            class="hero-container"
+          >
+            <div
+              class="hero-content"
+            >
+              <div
+                class="hero-badge"
+              >
+                <span>
+                  ≡ƒÜÇ Available for New Opportunities
+                </span>
+              </div>
+              <h1
+                class="hero-title"
+              >
+                Hi, I'm 
+                <span
+                  class="accent"
+                >
+                  Benjamin Gicheche
+                </span>
+              </h1>
+              <h2
+                class="hero-subtitle"
+              >
+                <span
+                  class="typing-text"
+                >
+                  Mobile App Developer ΓÇó Systems Administrator ΓÇó Web Developer ΓÇó UI/UX Designer
+                </span>
+              </h2>
+              <p
+                class="hero-description"
+              >
+                Results-driven IT professional with 5+ years of experience in Windows Server administration, network management, database optimization, and ERP system support. Proven expertise in managing enterprise IT infrastructure, including Active Directory, Group Policy, VMware virtualization, and disaster recovery planning. Adept at leading system migrations, enforcing IT security policies, and ensuring regulatory compliance. Combines deep technical knowledge with a strategic mindset to deliver scalable, secure, and efficient solutions that align with business objectives.
+              </p>
+              <div
+                class="hero-stats"
+              >
+                <div
+                  class="stat"
+                >
+                  <span
+                    class="stat-number"
+                  >
+                    5+
+                  </span>
+                  <span
+                    class="stat-label"
+                  >
+                    Years Experience
+                  </span>
+                </div>
+                <div
+                  class="stat"
+                >
+                  <span
+                    class="stat-number"
+                  >
+                    10K+
+                  </span>
+                  <span
+                    class="stat-label"
+                  >
+                    Monthly Users
+                  </span>
+                </div>
+                <div
+                  class="stat"
+                >
+                  <span
+                    class="stat-number"
+                  >
+                    99.9%
+                  </span>
+                  <span
+                    class="stat-label"
+                  >
+                    Uptime
+                  </span>
+                </div>
+              </div>
+              <div
+                class="hero-buttons"
+              >
+                <button
+                  class="btn btn-primary"
+                >
+                  View My Work
+                </button>
+                <button
+                  class="btn btn-secondary"
+                >
+                  Let's Connect
+                </button>
+              </div>
+            </div>
+            <div
+              class="hero-visual"
+            >
+              <div
+                class="profile-image-container"
+              >
+                <img
+                  alt="Benjamin Gicheche"
+                  class="profile-image"
+                  src="profile-hero.jpg"
+                />
+                <div
+                  class="image-decoration"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </body>
+
+      29 |     test('renders hero description', () => {
+      30 |         render(<Hero />);
+    > 31 |         expect(screen.getByText(/Full-stack developer/i)).toBeInTheDocument();
+         |                       ^
+      32 |     });
+      33 |
+      34 |     test('renders all stats correctly', () => {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/test/Hero.test.js:31:23)
+
+PASS src/test/Header.test.js
+FAIL src/test/About.test.js (5.59 s)
+  ΓùÅ About Component ΓÇ║ renders all experience positions
+
+    TestingLibraryElementError: Unable to find an element with the text: Attractions. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    <body>
+      <div>
+        <section
+          class="about"
+          id="about"
+        >
+          <div
+            class="container"
+          >
+            <h2
+              class="section-title"
+            >
+              About Me
+            </h2>
+            <div
+              class="about-content"
+            >
+              <div
+                class="about-text"
+              >
+                <p>
+                  I'm a highly motivated and innovative professional with a strong passion for creating software solutions that enhance lives and optimize business operations. With over 5 years of experience across mobile development, system administration, and web solutions.
+                </p>
+                <p>
+                  My expertise spans Flutter mobile development, React.js web applications, enterprise system administration, and database optimization. I thrive in fast-paced environments and am committed to delivering innovative IT solutions.
+                </p>
+                <div
+                  class="about-profile-image"
+                >
+                  <img
+                    alt="Benjamin Gicheche - Professional"
+                    class="about-image"
+                    src="profile-about.jpg"
+                  />
+                </div>
+                <div
+                  class="about-highlights"
+                >
+                  <div
+                    class="highlight"
+                  >
+                    <span
+                      class="highlight-icon"
+                    >
+                      ≡ƒÜÇ
+                    </span>
+                    <div>
+                      <h4>
+                        Fast Learner
+                      </h4>
+                      <p>
+                        Quick to adapt to new technologies and methodologies
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="highlight"
+                  >
+                    <span
+                      class="highlight-icon"
+                    >
+                      ≡ƒÆí
+                    </span>
+                    <div>
+                      <h4>
+                        Problem Solver
+                      </h4>
+                      <p>
+                        Strong analytical skills for complex technical challenges
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="highlight"
+                  >
+                    <span
+                      class="highlight-icon"
+                    >
+                      ≡ƒñ¥
+                    </span>
+                    <div>
+                      <h4>
+                        Team Player
+                      </h4>
+                      <p>
+                        Effective communicator and collaborator in team environments
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="experience"
+              >
+                <h3>
+                  Professional Journey
+                </h3>
+                <div
+                  class="timeline"
+                >
+                  <div
+                    class="timeline-item"
+                  >
+                    <div
+                      class="timeline-marker"
+                    />
+                    <div
+                      class="timeline-content"
+                    >
+                      <h4>
+                        Systems Administrator
+                      </h4>
+                      <div
+                        class="timeline-meta"
+                      >
+                        <span
+                          class="company"
+                        >
+                          SARRAI Group of Companies
+                        </span>
+                        <span
+                          class="period"
+                        >
+                          2021 - Present
+                        </span>
+                        <span
+                          class="location"
+                        >
+                          Nairobi, KE
+                        </span>
+                      </div>
+                      <ul
+                        class="achievements"
+                      >
+                        <li>
+                          Directed enterprise infrastructure including server management and databases
+                        </li>
+                        <li>
+                          Network administration (CISCO(CCNP/CCIE)
+                        </li>
+                        <li>
+                          Database administration (MySQL, PostgreSQL), and ERP systems (SAP, Tally Prime, SERA).
+                        </li>
+                        <li>
+                          Led TIMS-regulated ETRS migration across departments, optimizing workflows and ensuring compliance.
+                        </li>
+                        <li>
+                          Managed services alerts: Incident ticket analysis, remote support & resolution.
+                        </li>
+                        <li>
+                          Pioneered facial recognition attendance automation integrated with payroll, enhancing operational transparency
+                        </li>
+                        <li>
+                          Developed, executive and verified routine backup and disaster recovery procedures.
+                        </li>
+                        <li>
+                          Proactively monitored system performance, capacity and availability and responded to alerts and incidents
+                        </li>
+                        <li>
+                          User Account & Access Management: Created/deleted user accounts, managed permissions (Active Directory), and implemented access controls
+                        </li>
+                        <li>
+                          Technical Support & Troubleshooting: Acted as an escalation point for help desk for complex technical issues
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="timeline-item"
+                  >
+                    <div
+                      class="timeline-marker"
+                    />
+                    <div
+                      class="timeline-content"
+                    >
+                      <h4>
+                        Mobile Application Developer
+                      </h4>
+                      <div
+                        class="timeline-meta"
+                      >
+                        <span
+                          class="company"
+                        >
+                          Code Synth
+                        </span>
+                        <span
+                          class="period"
+                        >
+                          2024 - 2025
+                        </span>
+                        <span
+                          class="location"
+                        >
+                          Nairobi, KE (Remote)
+                        </span>
+                      </div>
+                      <ul
+                        class="achievements"
+                      >
+                        <li>
+                          Engineered responsive, adaptive UI components for cross-platform experiences
+                        </li>
+                        <li>
+                          Optimized application performance through strategic widget optimization
+                        </li>
+                        <li>
+                          Transformed design wireframes into high-quality functional interfaces
+                        </li>
+                        <li>
+                          Key Projects: Smart Mirror, Drilling and Well Control Simulator
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="timeline-item"
+                  >
+                    <div
+                      class="timeline-marker"
+                    />
+                    <div
+                      class="timeline-content"
+                    >
+                      <h4>
+                        Web Developer
+                      </h4>
+                      <div
+                        class="timeline-meta"
+                      >
+                        <span
+                          class="company"
+                        >
+                          App Lovin
+                        </span>
+                        <span
+                          class="period"
+                        >
+                          2022 - 2023
+                        </span>
+                        <span
+                          class="location"
+                        >
+                          Staffordshire, UK (Remote)
+                        </span>
+                      </div>
+                      <ul
+                        class="achievements"
+                      >
+                        <li>
+                          Developed 5+ responsive websites serving 10,000+ monthly users
+                        </li>
+                        <li>
+                          Optimized database performance reducing query response times by 30%
+                        </li>
+                        <li>
+                          Improved application loading speeds by 25% through optimization
+                        </li>
+                        <li>
+                          Maintained production websites with 99.9% uptime
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </body>
+
+      56 |
+      57 |         expect(screen.getByText('Mobile Application Developer')).toBeInTheDocument();
+    > 58 |         expect(screen.getByText('Attractions')).toBeInTheDocument();
+         |                       ^
+      59 |         expect(screen.getByText('2024 - Present')).toBeInTheDocument();
+      60 |         expect(screen.getByText('Staffordshire, UK (Remote)')).toBeInTheDocument();
+      61 |
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByText (node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/test/About.test.js:58:23)
+
+PASS src/test/Contact.test.js (5.475 s)
+FAIL src/test/Projects.test.js (5.805 s)
+  ΓùÅ Projects Component ΓÇ║ renders GitHub links for applicable projects
+
+    TestingLibraryElementError: Unable to find an element with the text: GitHub. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    <body>
+      <div>
+        <section
+          class="projects"
+          id="projects"
+        >
+          <div
+            class="container"
+          >
+            <h2
+              class="section-title"
+            >
+              Featured Projects
+            </h2>
+            <p
+              class="section-subtitle"
+            >
+              Showcasing my work across mobile development, web solutions, and system administration
+            </p>
+            <div
+              class="project-filters"
+            >
+              <button
+                class="filter-btn active"
+              >
+                All
+              </button>
+              <button
+                class="filter-btn "
+              >
+                Mobile
+              </button>
+              <button
+                class="filter-btn "
+              >
+                Web
+              </button>
+              <button
+                class="filter-btn "
+              >
+                System
+              </button>
+            </div>
+            <div
+              class="projects-grid"
+            >
+              <div
+                class="project-card"
+              >
+                <div
+                  class="project-header"
+                >
+                  <h3>
+                    Smart Mirror Application
+                  </h3>
+                </div>
+                <p
+                  class="project-description"
+                >
+                  Innovative Flutter-based smart mirror interface with custom widgets and adaptive UI
+                </p>
+                <div
+                  class="project-impact"
+                >
+                  <strong>
+                    Impact:
+                  </strong>
+                   
+                  Advanced IoT integration with facial recognition capabilities
+                </div>
+                <div
+                  class="project-tech"
+                >
+                  <span
+                    class="tech-tag"
+                  >
+                    Flutter
+                  </span>
+                  <span
+                    class="tech-tag"
+                  >
+                    Dart
+                  </span>
+                  <span
+                    class="tech-tag"
+                  >
+                    UI/UX
+                  </span>
+                </div>
+                <div
+                  class="project-links"
+                >
+                  <a
+                    class="project-link"
+                    href="https://play.google.com/store/apps/details?id=com.smartmirror.saral"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Play Store
+                  </a>
+                </div>
+              </div>
+              <div
+                class="project-card"
+              >
+                <div
+                  class="project-header"
+                >
+                  <h3>
+                    Drilling & Well Control Simulator
+                  </h3>
+                </div>
+                <p
+                  class="project-description"
+                >
+                  Complex simulation application for drilling operations with real-time data processing
+                </p>
+                <div
+                  class="project-impact"
+                >
+                  <strong>
+                    Impact:
+                  </strong>
+                   
+                  Training tool for petroleum industry professionals
+                </div>
+                <div
+                  class="project-tech"
+                >
+                  <span
+                    class="tech-tag"
+                  >
+                    Flutter
+                  </span>
+                  <span
+                    class="tech-tag"
+                  >
+                    Dart
+                  </span>
+                  <span
+                    class="tech-tag"
+                  >
+                    Algorithms
+                  </span>
+                </div>
+                <div
+                  class="project-links"
+                >
+                  <a
+                    class="project-link"
+                    href="https://play.google.com/store/apps/details?id=com.ltd.simulation.drilling"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Play Store
+                  </a>
+                </div>
+              </div>
+              <div
+                class="project-card"
+              >
+                <div
+                  class="project-header"
+                >
+                  <h3>
+                    Elamanella Websites
+                  </h3>
+                </div>
+                <p
+                  class="project-description"
+                >
+                  Responsive web platforms serving 10,000+ monthly users with 99.9% uptime
+                </p>
+                <div
+                  class="project-impact"
+                >
+                  <strong>
+                    Impact:
+                  </strong>
+                   
+                  High-traffic e-commerce solution with optimized performance
+                </div>
+                <div
+                  class="project-tech"
+                >
+                  <span
+                    class="tech-tag"
+                  >
+                    React
+                  </span>
+                  <span
+                    class="tech-tag"
+                  >
+                    WordPress
+                  </span>
+                  <span
+                    class="tech-tag"
+                  >
+                    MySQL
+                  </span>
+                </div>
+                <div
+                  class="project-links"
+                >
+                  <a
+                    class="project-link"
+                    href="http://elamanella.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+              <div
+                class="project-card"
+              >
+                <div
+                  class="project-header"
+                >
+                  <h3>
+                    ERP System Migration
+                  </h3>
+                </div>
+                <p
+                  class="project-description"
+                >
+                  Led TIMS-regulated ETRS migration and ERP system transitions
+                </p>
+                <div
+                  class="project-impact"
+                >
+                  <strong>
+                    Impact:
+                  </strong>
+                   
+                  Streamlined business processes across multiple departments
+                </div>
+                <div
+                  class="project-tech"
+                >
+                  <span
+                    class="tech-tag"
+                  >
+                    SAP
+                  </span>
+                  <span
+                    class="tech-tag"
+                  >
+                    Tally
+                  </span>
+                  <span
+                    class="tech-tag"
+                  >
+                    PostgreSQL
+                  </span>
+                </div>
+                <div
+                  class="project-links"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </body>
+
+      112 |         render(<Projects />);
+      113 |
+    > 114 |         const githubLinks = screen.getAllByText('GitHub');
+          |                                    ^
+      115 |         expect(githubLinks.length).toBe(2);
+      116 |
+      117 |         githubLinks.forEach(link => {
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at getAllByText (node_modules/@testing-library/dom/dist/query-helpers.js:109:15)
+      at Object.<anonymous> (src/test/Projects.test.js:114:36)
+
+PASS src/test/Skills.test.js (6.384 s)
+PASS src/test/Footer.test.js
+PASS src/test/App.test.js (7.775 s)
+
+Test Suites: 3 failed, 5 passed, 8 total
+Tests:       4 failed, 98 passed, 102 total
+Snapshots:   0 total
+Time:        12.502 s, estimated 13 s
+Ran all test suites.

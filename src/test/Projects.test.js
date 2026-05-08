@@ -108,13 +108,13 @@ describe('Projects Component', () => {
         expect(screen.getByText('SAP')).toBeInTheDocument();
     });
 
-    test('renders GitHub links for applicable projects', () => {
+    test('renders Play Store links for applicable projects', () => {
         render(<Projects />);
 
-        const githubLinks = screen.getAllByText('GitHub');
-        expect(githubLinks.length).toBe(2);
+        const playStoreLinks = screen.getAllByText('Play Store');
+        expect(playStoreLinks.length).toBe(2);
 
-        githubLinks.forEach(link => {
+        playStoreLinks.forEach(link => {
             expect(link).toHaveAttribute('href');
             expect(link).toHaveAttribute('target', '_blank');
             expect(link).toHaveAttribute('rel', 'noopener noreferrer');

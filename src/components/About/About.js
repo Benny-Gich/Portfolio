@@ -4,15 +4,15 @@ import './About.css';
 const About = () => {
     const experiences = [
         {
-            role: "Systems Administrator",
-            company: "SARRAI Group of Companies",
+            role: "IT Officer",
+            company: "Comply Industries Limited",
             period: "2021 - Present",
             location: "Nairobi, KE",
             achievements: [
                 
                 "Directed enterprise infrastructure including server management and databases",
-                "Network administration (CIsco(CCNP/CCIE)",
-                "Database administration (MySQL, PostgreSQL), and ERP systems (SAP, Tally Prime, SERA).",                "Pioneered facial recognition attendance automation integrated with payroll",
+                "Network administration (CISCO(CCNP/CCIE)",
+                "Database administration (MySQL, PostgreSQL), and ERP systems (SAP, Tally Prime, SERA).",
                 "Led TIMS-regulated ETRS migration across departments, optimizing workflows and ensuring compliance.",
                 "Managed services alerts: Incident ticket analysis, remote support & resolution.",
                 "Pioneered facial recognition attendance automation integrated with payroll, enhancing operational transparency",

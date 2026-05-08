@@ -55,14 +55,14 @@ describe('About Component', () => {
         expect(screen.getByText('Nairobi, KE')).toBeInTheDocument();
 
         expect(screen.getByText('Mobile Application Developer')).toBeInTheDocument();
-        expect(screen.getByText('Attractions')).toBeInTheDocument();
-        expect(screen.getByText('2024 - Present')).toBeInTheDocument();
-        expect(screen.getByText('Staffordshire, UK (Remote)')).toBeInTheDocument();
+        expect(screen.getByText('Code Synth')).toBeInTheDocument();
+        expect(screen.getByText('2024 - 2025')).toBeInTheDocument();
+        expect(screen.getByText('Nairobi, KE (Remote)')).toBeInTheDocument();
 
         expect(screen.getByText('Web Developer')).toBeInTheDocument();
         expect(screen.getByText('App Lovin')).toBeInTheDocument();
-        expect(screen.getByText('2022 - 2025')).toBeInTheDocument();
-        expect(screen.getByText('California, US (Remote)')).toBeInTheDocument();
+        expect(screen.getByText('2022 - 2023')).toBeInTheDocument();
+        expect(screen.getByText('Staffordshire, UK (Remote)')).toBeInTheDocument();
     });
 
     test('renders experience achievements', () => {
@@ -70,7 +70,7 @@ describe('About Component', () => {
 
         // SARRAI achievements
         expect(screen.getByText(/Directed enterprise infrastructure/i)).toBeInTheDocument();
-        expect(screen.getByText(/Led TIMs-regulated ETRS migration/i)).toBeInTheDocument();
+        expect(screen.getByText(/Led TIMS-regulated ETRS migration/i)).toBeInTheDocument();
 
         // Attractions achievements
         expect(screen.getByText(/Engineered responsive, adaptive UI components/i)).toBeInTheDocument();
