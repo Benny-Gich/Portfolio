@@ -29,7 +29,7 @@ const Hero = () => {
                     </h2>
 
                     <p className="hero-description">
-                        Results-driven IT professional with 5+ years of experience in Windows Server administration, network management, database optimization, and ERP system support. Proven expertise in managing enterprise IT infrastructure, including Active Directory, Group Policy, VMware virtualization, and disaster recovery planning. Adept at leading system migrations, enforcing IT security policies, and ensuring regulatory compliance. Combines deep technical knowledge with a strategic mindset to deliver scalable, secure, and efficient solutions that align with business objectives.
+                        Results-driven IT professional with 5+ years of experience in Windows Server administration, network management, database optimization, CCTv installation and maintenance, and ERP system support. Proven expertise in managing enterprise IT infrastructure, including Active Directory, Group Policy, VMware virtualization, and disaster recovery planning. Adept at leading system migrations, enforcing IT security policies, and ensuring regulatory compliance. Combines deep technical knowledge with a strategic mindset to deliver scalable, secure, and efficient solutions that align with business objectives.
                          </p>
 
                     <div className="hero-stats">
