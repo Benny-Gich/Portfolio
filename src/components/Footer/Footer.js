@@ -14,7 +14,7 @@ const Footer = () => {
                             {/* <span className="accent">.</span> */}
                         </div>
                         <p>
-                            Mobile Application Developer • Systems Administrator • Web Developer
+                            IT Officer | IT Assistant Manager | Systems Administrator
                         </p>
                     </div>
 

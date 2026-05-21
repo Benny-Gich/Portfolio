@@ -15,7 +15,7 @@ const Hero = () => {
             <div className="hero-container">
                 <div className="hero-content">
                     <div className="hero-badge">
-                        <span>Available for New Opportunities 🚀</span>
+                        <span>Available for New Opportunities</span>
                     </div>
 
                     <h1 className="hero-title">
@@ -24,13 +24,13 @@ const Hero = () => {
 
                     <h2 className="hero-subtitle">
                         <span className="typing-text">
-                            Mobile App Developer • IT Officer • Systems Administrator • Web Developer • UI/UX Designer
+                            IT Officer | IT Assistant Manager | Systems Administrator | Mobile &amp; Web Developer
                         </span>
                     </h2>
 
                     <p className="hero-description">
-                        Results-driven IT professional with 5+ years of experience in Windows Server administration, network management, database optimization, CCTv installation and maintenance, and ERP system support. Proven expertise in managing enterprise IT infrastructure, including Active Directory, Group Policy, VMware virtualization, and disaster recovery planning. Adept at leading system migrations, enforcing IT security policies, and ensuring regulatory compliance. Combines deep technical knowledge with a strategic mindset to deliver scalable, secure, and efficient solutions that align with business objectives.
-                         </p>
+                        IT Assistant Manager ready with 5+ years of experience and a proven track record in team leadership, infrastructure management, and strategic project delivery. I directly supervised 2 technical staff, reducing average incident resolution time by 62.5% (from 8 to 3 hours). I specialize in leading complex system migrations (ERP, surveillance), enforcing security compliance, and implementing disaster recovery plans that cut RTO by 50%. My focus is on aligning technical solutions with business objectives to drive efficiency and growth.
+                    </p>
 
                     <div className="hero-stats">
                         <div className="stat">
@@ -38,12 +38,12 @@ const Hero = () => {
                             <span className="stat-label">Years Experience</span>
                         </div>
                         <div className="stat">
-                            <span className="stat-number">10K+</span>
-                            <span className="stat-label">Monthly Users</span>
+                            <span className="stat-number">62.5%</span>
+                            <span className="stat-label">Faster Incident Resolution</span>
                         </div>
                         <div className="stat">
                             <span className="stat-number">99.9%</span>
-                            <span className="stat-label">Uptime</span>
+                            <span className="stat-label">Uptime Maintained</span>
                         </div>
                     </div>
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import Achievements from './components/Achievements/Achievements';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
@@ -22,7 +23,7 @@ function App() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ['home', 'projects', 'about', 'contact'];
+            const sections = ['home', 'achievements', 'projects', 'about', 'contact'];
             const scrollY = window.pageYOffset;
 
             sections.forEach(section => {
@@ -50,6 +51,7 @@ function App() {
                 activeSection={activeSection}
             />
             <Hero />
+            <Achievements />
             <Projects />
             <About />
             <Skills />

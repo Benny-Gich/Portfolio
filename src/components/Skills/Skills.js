@@ -4,43 +4,43 @@ import './Skills.css';
 const Skills = () => {
     const skillCategories = [
         {
-            title: "Mobile Development",
-            icon: "📱",
+            title: "Systems & Infrastructure",
+            icon: "🖥️",
             skills: [
-                { name: "Flutter", level: 90 },
-                { name: "Dart", level: 85 },
-                { name: "Android Studio", level: 80 },
-                { name: "UI/UX Design", level: 75 }
+                { name: "Windows Server (2008/2019)", level: 92 },
+                { name: "Active Directory & Group Policy", level: 90 },
+                { name: "VMware vSphere / ESXi", level: 88 },
+                { name: "Disaster Recovery (RTO/RPO)", level: 85 }
             ]
         },
         {
-            title: "Web Development",
-            icon: "🌐",
+            title: "Security & Cloud",
+            icon: "🔐",
             skills: [
-                { name: "React.js", level: 85 },
-                { name: "JavaScript", level: 80 },
-                { name: "HTML/CSS", level: 90 },
-                { name: "WordPress", level: 75 }
-            ]
-        },
-        {
-            title: "Systems & Databases",
-            icon: "⚙️",
-            skills: [
-                { name: "PostgreSQL", level: 85 },
-                { name: "MySQL", level: 80 },
-                { name: "Linux Administration", level: 75 },
-                { name: "AWS Cloud", level: 70 }
+                { name: "Firewalls (pfSense / Cisco ASA)", level: 88 },
+                { name: "Patch Management (WSUS)", level: 90 },
+                { name: "AWS (EC2, S3, VPC, IAM)", level: 75 },
+                { name: "Backup & Recovery (Acronis / Veeam)", level: 85 }
             ]
         },
         {
             title: "Business Systems",
             icon: "💼",
             skills: [
-                { name: "ERP Systems", level: 85 },
-                { name: "SAP", level: 75 },
-                { name: "Tally", level: 80 },
-                { name: "Network Admin", level: 70 }
+                { name: "ERP Systems (SAP / Tally / SERA)", level: 88 },
+                { name: "Regulatory Compliance (KRA/TIMS)", level: 90 },
+                { name: "Microsoft 365 (Exchange, SharePoint)", level: 82 },
+                { name: "Database Admin (MySQL / PostgreSQL)", level: 80 }
+            ]
+        },
+        {
+            title: "Development",
+            icon: "💻",
+            skills: [
+                { name: "Flutter / Dart", level: 85 },
+                { name: "React.js / JavaScript", level: 80 },
+                { name: "HTML5 / CSS3", level: 88 },
+                { name: "UI/UX Design (Figma)", level: 75 }
             ]
         }
     ];
@@ -50,7 +50,7 @@ const Skills = () => {
             <div className="container">
                 <h2 className="section-title">Technical Expertise</h2>
                 <p className="section-subtitle">
-                    Comprehensive skill set spanning development, administration, and business systems
+                    Infrastructure leadership, security, business systems, and development expertise
                 </p>
 
                 <div className="skills-grid">
@@ -81,12 +81,15 @@ const Skills = () => {
                 </div>
 
                 <div className="skills-cloud">
-                    <h3>Additional Technologies</h3>
+                    <h3>Additional Technologies & Tools</h3>
                     <div className="tech-tags">
                         {[
-                            "Git", "GitHub", "Figma", "Agile", "Automated Testing",
-                            "TCP/IP", "DNS", "DHCP", "WAN", "Helpdesk", "Payroll",
-                            "Visual Studio Code", "SEO", "Java", "Wireframes"
+                            "TCP/IP", "DNS", "DHCP", "VLANs", "VPN",
+                            "Cisco Switches/Routers", "CCTV Installation", "PBX Systems",
+                            "Docker", "Linux (Ubuntu)", "Oracle (basic)", "DynamoDB",
+                            "Git", "GitHub", "Figma", "Helpdesk / SLA Management",
+                            "Facial Recognition Systems", "RBAC", "WSUS", "Kaspersky AV",
+                            "Java", "WordPress", "Agile"
                         ].map(tech => (
                             <span key={tech} className="tech-tag">{tech}</span>
                         ))}

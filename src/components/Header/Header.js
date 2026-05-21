@@ -6,6 +6,7 @@ const Header = ({ darkMode, setDarkMode, activeSection }) => {
 
     const menuItems = [
         { id: 'home', label: 'Home' },
+        { id: 'achievements', label: 'Achievements' },
         { id: 'projects', label: 'Projects' },
         { id: 'about', label: 'About' },
         { id: 'contact', label: 'Contact' }

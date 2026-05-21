@@ -4,38 +4,59 @@ import './Projects.css';
 const featuredProjects = [
     {
         id: 1,
-        name: "Smart Mirror Application",
-        description: "Innovative Flutter-based smart mirror interface with custom widgets and adaptive UI",
-        tech: ["Flutter", "Dart", "UI/UX"],
-        category: "mobile",
-        playstore: "https://play.google.com/store/apps/details?id=com.smartmirror.saral",
-        impact: "Advanced IoT integration with facial recognition capabilities"
+        name: "Enterprise e-TIMS Compliance Migration",
+        description: "Led the end-to-end migration of 10,000+ tax transaction records from a legacy ETR system to the KRA-mandated e-TIMS platform, redesigning ERP workflows and user permission matrices across the finance and operations departments.",
+        tech: ["SAP", "Tally Prime", "SERA", "Data Migration", "Regulatory Compliance"],
+        category: "infrastructure",
+        challenge: "Legacy ERP system non-compliant with KRA regulations, risking penalties and causing manual 3-day monthly financial reports.",
+        result: "Achieved 100% KRA compliance. Slashed monthly financial reporting from 3 days to 1 day, saving the finance team 16 person-hours weekly. Reduced ERP permission errors by 40%.",
+        impact: "100% KRA compliance · 16 person-hours saved weekly · 40% fewer permission errors"
     },
     {
         id: 2,
-        name: "Drilling & Well Control Simulator",
-        description: "Complex simulation application for drilling operations with real-time data processing",
-        tech: ["Flutter", "Dart", "Algorithms"],
-        category: "mobile",
-        playstore: "https://play.google.com/store/apps/details?id=com.ltd.simulation.drilling",
-        impact: "Training tool for petroleum industry professionals"
+        name: "IP Surveillance & Payroll Automation Overhaul",
+        description: "Architected and led the full migration from 32 analog CCTV cameras to 48 IP-based 4MP cameras over fiber, and deployed an enterprise facial recognition attendance system integrated with SAP payroll for 250 employees.",
+        tech: ["Network Infrastructure", "IP Cameras", "Facial Recognition", "SAP Payroll", "Fiber Networking"],
+        category: "infrastructure",
+        challenge: "Outdated analog CCTV with poor night coverage and rampant time theft ('buddy-punching') causing 8% payroll errors and high maintenance costs.",
+        result: "Reduced CCTV maintenance costs by KSh 180,000/year, improved night incident capture by 60%, eliminated buddy-punching, and saved KSh 50,000 monthly by cutting payroll errors from 8% to 0.5%.",
+        impact: "KSh 230,000+ saved annually · Payroll errors reduced from 8% to 0.5% · 60% better night capture"
     },
     {
         id: 3,
-        name: "Elamanella Websites",
-        description: "Responsive web platforms serving 10,000+ monthly users with 99.9% uptime",
-        tech: ["React", "WordPress", "MySQL"],
-        category: "web",
-        live: "http://elamanella.com",
-        impact: "High-traffic e-commerce solution with optimized performance"
+        name: "VMware vSphere Infrastructure & Disaster Recovery",
+        description: "Managed a production VMware vSphere environment with 3 ESXi hosts and 7 VMs supporting 100 users. Implemented a comprehensive Disaster Recovery Plan with Acronis daily backups and quarterly DR testing.",
+        tech: ["VMware vSphere", "ESXi", "Acronis", "Windows Server", "Disaster Recovery"],
+        category: "infrastructure",
+        challenge: "VM provisioning took 4 hours, RPO was 24 hours, and RTO was 8 hours — unacceptable for business continuity requirements.",
+        result: "Cut VM provisioning from 4 hours to 45 minutes (81% faster), reduced RPO from 24 hrs to 4 hrs (83% improvement), and slashed RTO from 8 hrs to 4 hrs (50% improvement) with 100% restore success.",
+        impact: "99.95% uptime · RPO reduced by 83% · RTO reduced by 50% · 100% restore success rate"
     },
     {
         id: 4,
-        name: "ERP System Migration",
-        description: "Led TIMS-regulated ETRS migration and ERP system transitions",
-        tech: ["SAP", "Tally", "PostgreSQL"],
-        category: "system",
-        impact: "Streamlined business processes across multiple departments"
+        name: "Smart Mirror Application",
+        description: "Innovative Flutter-based smart mirror interface with custom widgets and adaptive UI, featuring IoT integration and facial recognition capabilities.",
+        tech: ["Flutter", "Dart", "UI/UX"],
+        category: "mobile",
+        playstore: "https://play.google.com/store/apps/details?id=com.smartmirror.saral",
+        impact: "Published on Google Play Store · Advanced IoT integration"
+    },
+    {
+        id: 5,
+        name: "Drilling & Well Control Simulator",
+        description: "Complex simulation application for drilling operations with real-time data processing, used as a training tool for petroleum industry professionals.",
+        tech: ["Flutter", "Dart", "Algorithms"],
+        category: "mobile",
+        playstore: "https://play.google.com/store/apps/details?id=com.ltd.simulation.drilling",
+        impact: "Published on Google Play Store · Industry training tool"
+    },
+    {
+        id: 6,
+        name: "Responsive Web Platforms",
+        description: "Designed and developed responsive websites serving 10,000+ monthly users with optimized database performance and 99.9% uptime.",
+        tech: ["React", "WordPress", "MySQL", "PostgreSQL"],
+        category: "web",
+        impact: "10,000+ monthly users · 30% faster query response · 99.9% uptime"
     }
 ];
 
@@ -58,29 +79,49 @@ const Projects = () => {
             <div className="container">
                 <h2 className="section-title">Featured Projects</h2>
                 <p className="section-subtitle">
-                    Showcasing my work across mobile development, web solutions, and system administration
+                    IT infrastructure leadership, system migrations, and development work
                 </p>
 
                 <div className="project-filters">
-                    {['all', 'mobile', 'web', 'system'].map(category => (
+                    {[
+                        { key: 'all', label: 'All' },
+                        { key: 'infrastructure', label: 'Infrastructure' },
+                        { key: 'mobile', label: 'Mobile' },
+                        { key: 'web', label: 'Web' }
+                    ].map(({ key, label }) => (
                         <button
-                            key={category}
-                            className={`filter-btn ${filter === category ? 'active' : ''}`}
-                            onClick={() => setFilter(category)}
+                            key={key}
+                            className={`filter-btn ${filter === key ? 'active' : ''}`}
+                            onClick={() => setFilter(key)}
                         >
-                            {category.charAt(0).toUpperCase() + category.slice(1)}
+                            {label}
                         </button>
                     ))}
                 </div>
 
                 <div className="projects-grid">
                     {filteredProjects.map(project => (
-                        <div key={project.id} className="project-card">
+                        <div key={project.id} className={`project-card ${project.category === 'infrastructure' ? 'project-card--featured' : ''}`}>
                             <div className="project-header">
+                                {project.category === 'infrastructure' && (
+                                    <span className="project-badge">IT Infrastructure</span>
+                                )}
                                 <h3>{project.name}</h3>
                             </div>
 
                             <p className="project-description">{project.description}</p>
+
+                            {project.challenge && (
+                                <div className="project-challenge">
+                                    <strong>Challenge:</strong> {project.challenge}
+                                </div>
+                            )}
+
+                            {project.result && (
+                                <div className="project-result">
+                                    <strong>Result:</strong> {project.result}
+                                </div>
+                            )}
 
                             {project.impact && (
                                 <div className="project-impact">
