@@ -56,7 +56,14 @@ const featuredProjects = [
         description: "Designed and developed responsive websites serving 10,000+ monthly users with optimized database performance and 99.9% uptime.",
         tech: ["React", "WordPress", "MySQL", "PostgreSQL"],
         category: "web",
-        impact: "10,000+ monthly users · 30% faster query response · 99.9% uptime"
+        impact: "10,000+ monthly users · 30% faster query response · 99.9% uptime",
+        links: [
+            { label: "Elamanella", url: "https://elamanella.com" },
+            { label: "Elamanella/Kindle", url: "https://elamanella.com/kindle" },
+            { label: "GoGreen", url: "https://gogreenwithnor.pantheonsite.io" },
+            { label: "Lablog", url: "https://lablog.pantheonsite.io" },
+            { label: "Portfolio", url: "https://benjamingicecheportfolio.netlify.app/" }
+        ]
     }
 ];
 
@@ -101,15 +108,29 @@ const Projects = () => {
 
                 <div className="projects-grid">
                     {filteredProjects.map(project => (
-                        <div key={project.id} className={`project-card ${project.category === 'infrastructure' ? 'project-card--featured' : ''}`}>
+                        <div key={project.id} className={`project-card ${project.category !== 'all' ? 'project-card--featured' : ''}`}>
                             <div className="project-header">
                                 {project.category === 'infrastructure' && (
                                     <span className="project-badge">IT Infrastructure</span>
+                                )}
+                                {project.category === 'mobile' && (
+                                    <span className="project-badge">Mobile</span>
+                                )}
+                                {project.category === 'web' && (
+                                    <span className="project-badge">Web</span>
                                 )}
                                 <h3>{project.name}</h3>
                             </div>
 
                             <p className="project-description">{project.description}</p>
+
+                            {project.details && (
+                                <ul className="project-details">
+                                    {project.details.map((detail, i) => (
+                                        <li key={i}>{detail}</li>
+                                    ))}
+                                </ul>
+                            )}
 
                             {project.challenge && (
                                 <div className="project-challenge">
@@ -146,6 +167,11 @@ const Projects = () => {
                                         Live Demo
                                     </a>
                                 )}
+                                {project.links && project.links.map((link, i) => (
+                                    <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" className="project-link">
+                                        {link.label}
+                                    </a>
+                                ))}
                             </div>
                         </div>
                     ))}

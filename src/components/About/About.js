@@ -48,7 +48,8 @@ const About = () => {
             achievements: [
                 "Designed and developed responsive websites supporting 10,000+ monthly users with 99.9% uptime.",
                 "Optimized MySQL and PostgreSQL databases, reducing query response times by 30% and improving load speeds by 25%.",
-                "Maintained production websites, implementing security updates and performance enhancements."
+                "Maintained production websites, implementing security updates and performance enhancements.",
+                "Developed and maintained web applications such as elamanella.com, elamanella.com/kindle, gogreenwithnor.pantheonsite.io, and lablog.pantheonsite.io"
             ]
         }
     ];
