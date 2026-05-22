@@ -147,8 +147,31 @@
         gap: 0.5rem;
     }
 
+    .about-text p {
+        font-size: 1rem;
+    }
+
     .about-image {
         width: 250px;
         height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 3rem 0;
+    }
+
+    .about-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .timeline-item {
+        padding-left: 2rem;
+    }
+
+    .experience h3 {
+        font-size: 1.25rem;
     }
 }

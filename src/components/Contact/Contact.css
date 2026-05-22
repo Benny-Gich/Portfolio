@@ -172,3 +172,19 @@
         gap: 0.5rem;
     }
 }
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 3rem 0;
+    }
+
+    .contact-info h3 {
+        font-size: 1.25rem;
+    }
+
+    .contact-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.25rem;
+    }
+}

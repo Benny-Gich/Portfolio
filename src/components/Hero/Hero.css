@@ -132,3 +132,36 @@
         margin: 0 auto;
     }
 }
+
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 70px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-stats {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .profile-image-container {
+        width: 240px;
+        height: 240px;
+    }
+}
