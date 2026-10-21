@@ -34,7 +34,7 @@ const featuredProjects = [
     },
     {
         id: 4,
-        name: "Smart Mirror Application",
+        name: "Smart Mirror",
         description: "Innovative Flutter-based smart mirror interface with custom widgets and adaptive UI, featuring IoT integration and facial recognition capabilities.",
         tech: ["Flutter", "Dart", "UI/UX"],
         category: "mobile",
@@ -43,12 +43,12 @@ const featuredProjects = [
     },
     {
         id: 5,
-        name: "Drilling & Well Control Simulator",
-        description: "Complex simulation application for drilling operations with real-time data processing, used as a training tool for petroleum industry professionals.",
+        name: "Sycomfy",
+        description: "Ecommerce application dedicated to aid with the sales of the best curated quality home, office, and kitchen furniture that provides a blend of aesthetic appeal with functional excellence.",
         tech: ["Flutter", "Dart", "Algorithms"],
         category: "mobile",
-        playstore: "https://play.google.com/store/apps/details?id=com.ltd.simulation.drilling",
-        impact: "Published on Google Play Store · Industry training tool"
+        playstore: "https://play.google.com/store/apps/details?id=com.sycomfy.client&hl=en_US",
+        impact: "Published on Google Play Store · E-commerce"
     },
     {
         id: 6,

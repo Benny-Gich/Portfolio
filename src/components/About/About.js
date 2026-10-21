@@ -32,7 +32,7 @@ const About = () => {
         {
             role: "Mobile Developer & UI/UX Designer",
             company: "Code Synth",
-            period: "Aug 2020 – Feb 2021",
+            period: "Aug 2020 – Feb 2025",
             location: "Remote",
             achievements: [
                 "Engineered responsive, adaptive UI components for cross-platform mobile applications using Flutter.",
@@ -43,7 +43,7 @@ const About = () => {
         {
             role: "Web Developer",
             company: "App Lovin",
-            period: "Jan 2020 – Jun 2020",
+            period: "Jan 2020 – Jun 2021",
             location: "Remote",
             achievements: [
                 "Designed and developed responsive websites supporting 10,000+ monthly users with 99.9% uptime.",
